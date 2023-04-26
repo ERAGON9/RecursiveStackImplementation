@@ -27,6 +27,9 @@
     <ClCompile Include="NestedLoop.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="time.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h">
@@ -35,10 +38,16 @@
     <ClInclude Include="NestedLoopHeader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RecursiveHeader.h">
+    <ClInclude Include="Recursive.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="StackHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
