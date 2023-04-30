@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="IterativeAsRecursive.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="NestedLoop.cpp" />
     <ClCompile Include="Recursive.cpp" />
@@ -146,8 +147,8 @@
     <ClCompile Include="time.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header.h" />
     <ClInclude Include="ItemType.h" />
+    <ClInclude Include="IterativeAsRecursive.h" />
     <ClInclude Include="NestedLoop.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Recursive.h" />

@@ -1,3 +1,3 @@
 #pragma once
 
-void recursiveFindSumX(int A[], int n, int x, int y);
+void RecursiveFindSumX(int A[], int n, int x);

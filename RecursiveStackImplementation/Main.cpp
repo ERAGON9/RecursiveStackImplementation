@@ -2,32 +2,27 @@
 #include "Time.h"
 #include "Recursive.h"
 #include "NestedLoop.h"
+#include "IterativeAsRecursive.h"
+#include "Stack.h"
 
 using namespace std;
 
 int main()
 {
-    /*
     int n, x;
     cin >> n;
-
-    if (n == 0) // The array size is 0, empty array is not valid! 
-    {
-        cout << "wrong input";
-        exit(1);
-    }
-    int* A = new int[n];
-    for (int i = 0; i < n; i++)
-    {
+    int* A = new int[10];
+    for (int i = 0; i < n; i++) {
         cin >> A[i];
     }
     cin >> x;
-    */
 
-    int A[] = { 1, 5, 10, 3, 7, 9, 4, 8, 6, 2 };
-    NestedLoopFindSumX(A, 10, 8);
-    cout << endl;
-    recursiveFindSumX(A, 10, 8, 0);
-
+    cout << "Iterative algorithm:" << endl;
+    RunAndPrintFuncRuntime(NestedLoopFindSumX, A, n, x);
+    cout << "Recursive algorithm (recursive version):" << endl;
+    RunAndPrintFuncRuntime(RecursiveFindSumX, A, n, x);
+    cout << "Recursive algorithm (iterative version):" << endl;
+    RunAndPrintFuncRuntime(IterativeAsRecursiveFindSumX, A, n, x);
+    
     return 0;
 }

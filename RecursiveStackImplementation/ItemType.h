@@ -3,6 +3,8 @@
 
 using namespace std;
 
+enum {START, AFTER_FIRST, AFTER_SECOND, AFTER_THIRD};
+
 class ItemType 
 {
 private:
@@ -19,6 +21,8 @@ public:
         y = _y;
         line = _line;
     }
+
+    ItemType() {}
 
     int getN() const 
     {
