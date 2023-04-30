@@ -148,10 +148,11 @@
   <ItemGroup>
     <ClInclude Include="Header.h" />
     <ClInclude Include="ItemType.h" />
-    <ClInclude Include="NestedLoopHeader.h" />
+    <ClInclude Include="NestedLoop.h" />
+    <ClInclude Include="Node.h" />
     <ClInclude Include="Recursive.h" />
-    <ClInclude Include="StackHeader.h" />
-    <ClInclude Include="time.h" />
+    <ClInclude Include="Stack.h" />
+    <ClInclude Include="Time.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
