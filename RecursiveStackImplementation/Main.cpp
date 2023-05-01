@@ -9,11 +9,32 @@ using namespace std;
 
 int main()
 {
+    string nAsString;
     int n, x;
-    cin >> n;
-    int* A = new int[10];
-    for (int i = 0; i < n; i++) {
+    cin >> nAsString;
+    for (char ch : nAsString)
+    {
+        if (ch < '0' || ch > '9')
+        {
+            cout << "wrong input";
+            exit(1);
+        }
+    }
+    n = stoi(nAsString);
+    if (n <= 0)
+    {
+        cout << "wrong input";
+        exit(1);
+    }
+    int* A = new int[n];
+    for (int i = 0; i < n; i++) 
+    {
         cin >> A[i];
+        if (A[i] < 0)
+        {
+            cout << "wrong input";
+            exit(1);
+        }
     }
     cin >> x;
 

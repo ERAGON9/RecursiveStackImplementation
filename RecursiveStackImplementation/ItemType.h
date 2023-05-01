@@ -8,16 +8,15 @@ enum {START, AFTER_FIRST, AFTER_SECOND, AFTER_THIRD};
 class ItemType 
 {
 private:
-    int n;
-    int x;
-    int y;
-    int line;
+    int n; // The length of the array.
+
+    int y; // The helper.
+    int line; // the line we are at the 'recursion' stack.
 
 public:
-    ItemType(int _n, int _x, int _y, int _line) 
+    ItemType(int _n, int _y, int _line) 
     {
         n = _n;
-        x = _x;
         y = _y;
         line = _line;
     }
@@ -27,11 +26,6 @@ public:
     int getN() const 
     {
         return n;
-    }
-
-    int getX() const 
-    {
-        return x;
     }
 
     int getY() const 
@@ -47,11 +41,6 @@ public:
     void setN(int _n) 
     {
         n = _n;
-    }
-
-    void setX(int _x) 
-    {
-        x = _x;
     }
 
     void setY(int _y) 
