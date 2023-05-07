@@ -45,5 +45,7 @@ int main()
     cout << "Recursive algorithm (iterative version):" << endl;
     RunAndPrintFuncRuntime(IterativeAsRecursiveFindSumX, A, n, x);
     
+    delete[] A;
+
     return 0;
 }
